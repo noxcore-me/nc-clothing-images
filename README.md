@@ -42,6 +42,18 @@ File naming inside each gender folder (remote mode):
   `_<n>` (`male_11__0_1.webp`). The NUI strips `_{tex}` for texture 0.
 - Props use `prop_<n>` in place of the component (`male_prop_0__12.webp`).
 
+### Rendering your own thumbnails
+
+To serve thumbnails for custom clothing packs, render them with
+**RPFView**: Thumbnails → Clothing → All clothing of `mp_m_freemode_01` /
+`mp_f_freemode_01`, naming preset **`FiveM: collections`**, WebP (512px
+matches the hosted set), placeholders skipped — then upload into
+`images/male/` / `images/female/`.
+
+Render from the same clothing files your server streams: the collection
+names in each file must match what your server reports, or the `{id}`
+lookups will miss.
+
 Note: the zips in this repo are drawable-indexed for `local` mode — they
 are **not** the remote naming and will 404 under the `{id}` template.
 
